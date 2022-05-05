@@ -1,0 +1,35 @@
+{% extends "layouts/monapp.html" %}
+
+{% block content %}
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+    <div class="notification is-danger">
+        {{ messages[0] }}
+    </div>
+{% endif %}
+{% endwith %}
+<br/>
+
+<form method="POST" action="/login">
+<div class="column is-4 is-offset-4">
+    <h3 class="title">Login page</h3>
+    
+        <form method="POST" action="/login">
+
+            {{form.hidden_tag()}}    
+            {{form.username}}
+            {{form.password}}
+            {{form.submit}}
+
+            
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Remember me
+                </label>
+            </div>
+            <button class="button is-block is-info is-large is-fullwidth">Login</button>
+        </form>
+   
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'layouts/monapp.html' %}  
+
+{% block content %}
+<script>
+  function f(){
+         alert("Bonjour à tous");
+  }     
+  function g() {
+       alert("Evénement détect")
+  }
+  function h(){
+       alert(document.formulaire.montexte.value);
+       
+
+  }   
+  function permuter(){
+      var x= document.formulaire.montexte1.value
+       document.formulaire.montexte1.value=document.formulaire.montexte2.value;
+       document.formulaire.montexte2.value = x;
+  } 
+</script>  
+
+
+       <h1>Nous sommes ici : 01 88 32 949 37</h1>
+       <script src="{{ url_for('static', filename='js/myfile.js') }}"></script>
+
+       <input type="button" value="Valider" onMouseover="f()"/>
+       <input type="text" name="Vive nous !" onkeyup="g()"/>
+
+
+       <form name="formulaire">
+              <input type="text" name="montexte1"/><br />
+              <input type="text" name="montexte2"/><br />
+              <input type="button" value="Impression" onclick="h()"/>
+              <input type="button" value="Permuter" onclick="permuter()"/>
+       </form>
+  
+{% endblock content %}
+

@@ -1,0 +1,61 @@
+/* Ceci est notre fichier CSS à part des CSS bootstrap */
+
+
+.header {
+    background: #FFF;
+    padding: 16px 0;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.header svg {
+    width: auto;
+    height: 22px;
+    margin: 0 6px;
+    padding-bottom: 2px;
+}
+
+:target {
+    padding-top: 7em; 
+    margin-top: -7em; 
+}
+
+h1 {
+
+    color: rgb(13, 201, 201);
+    font-size: 60px;
+}
+
+body {
+    background: #bbbbd3;
+}
+/* 
+.row > div {
+    
+     background: rgb(167, 151, 151);
+    border: 1px solid grey;
+
+}
+*/
+.row > div > p {
+    
+    background: rgb(112, 185, 210);
+    
+  
+}
+
+/* CSS pour les boutons  */
+.bouton {
+    background-color: purple;
+    color:black
+}
+
+#voka {
+background-color: rgb(212, 143, 143);
+border: 2px solid black;
+}
+
+#grammaire{
+    background-color: rgb(128, 228, 223);
+    border: 2px solid black;
+}
+    

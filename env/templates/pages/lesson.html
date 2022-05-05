@@ -1,0 +1,126 @@
+{% extends 'layouts/monapp.html' %}  
+
+  {% block content %}
+  <script>
+    index = 0;
+    function BoutonVoca(){
+      index = 0;
+      bouton.style.backgroundColor = "green"
+      
+    }
+
+    function Indexmoins(){
+
+      index = index - 2;
+      lire_fichier();
+    }
+
+
+    function lire_fichier(){
+  
+      index = index + 1;
+    fetch('http://127.0.0.1:5000/Phrase')
+    .then(res => res.json())
+    .then(function (value){
+    document.getElementById("traduire").innerHTML = value[index]['French'];
+    let turc = document.getElementById("alaturque");
+    turc.style.visibility = "hidden";
+
+       })
+       }
+    function traduction(){
+
+  index = index + 1;
+  fetch('http://127.0.0.1:5000/Phrase')
+  .then(res => res.json())
+  .then(function (value){
+    let turc = document.getElementById("alaturque");
+    turc.style.visibility = "visible";
+  document.getElementById("alaturque").innerHTML = value[index]['Turkish'];
+    })
+  }
+
+    function affichage_vocabulaire(){
+  
+    fetch('http://127.0.0.1:5000/Phrase')
+    .then(res3 => res3.json())
+    .then(function (value){
+      for (index=1 ; index<6; index++){
+      var newli = document.createElement('li');
+      var newdiv= document.createElement('Div');
+      newdiv.innerHTML = value[index]['French'];
+      newli.appendChild(newdiv); 
+      document.getElementById('listevoca').appendChild (newli);
+      }
+          
+    })
+  }
+  
+</script>
+
+
+
+  <body onload="affichage_vocabulaire()">
+   
+    <br/>
+    <br/>
+    <div id="lesson" class="container-fluid" >
+      <div  class="row">
+        <h1>Leçon numéro {{numero}}</h1>
+      </div>
+    </div>  
+ 
+      
+      <div class="container-fluid main gy-5">
+        
+        <div class="container-xl main-container g-5">
+          <div class="row">
+            
+            <div id= "voka" class="col-md-3 col-8 g-5 vocabulary">
+              <p>Les nouveaux mots de cette leçon</p>
+              <div id="listevoca"></div>
+            </div>
+
+            <div id="grammaire" class="col-md-7 col-8 g-5 gramar">
+            <p>Point de grammaire de cette leçon</p>
+            <div id="Grammar"></div>
+            </div>
+          </div>    
+        </div>
+      </div>
+
+      <div class="container-fuid">
+        <div class="container-xl main-container">
+          <div class="row">
+            <div class="col-md-5 col-6 g-5">
+              <button type="button" id="voka" class="btn btn-lg btn-block" onclick="BoutonVoca()">J'apprends le Vocabulaire</button>
+            </div>
+            <div class="col-md-5 col-6 g-5">
+              <button type="button" id="grammaire" class="btn  btn-lg btn-block">J'apprends la grammaire</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid g-5">
+        <div class="container-xl main-container">
+          <div class="row g-5">
+
+              <div > 
+                <input class="bouton" id="PS" type = "button" value="phrase suivante" onClick="lire_fichier()"/>
+                <input type = "button" value="traduction" onClick="traduction()"/>
+              </div>
+          </div>
+        
+          <div class="row">
+            <div  id = "traduire"><h1>La phrase à traduire</h1></div>
+            <div id = "alaturque"><h1>La phrase traduite !</h1></div>
+          </div>
+
+       <input type = "button" value="phrase précédente" onClick="Indexmoins()"/>
+      </div>
+      
+  </body>
+
+
+  {% endblock content %}

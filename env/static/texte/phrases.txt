@@ -1,0 +1,56 @@
+﻿Bugün, Pazartesi mi? 
+Aujourd'hui est-ce lundi ? 
+Hayır, bugün Salı
+Non aujourd'hui c'est mardi.
+Musa, peygamber mi? 
+Moïse, est-ce un prophète ? 
+Çocuk hasta mı
+L'enfant est-il malade ? 
+Salon, kalabalık mı? 
+IL y a beaucoup de monde à la Salle ? 
+Bu birader, öncü mü? 
+Ce frere est-il pionnier ? 
+Bu restoran, iyi mi? 
+Ce restaurant est-il bien ? 
+Burası, Fethiye mi? 
+İci, est-ce Fethiye ? 
+Bugün, hava sıcak mı ? 
+Est-ce qu'il fait chaud 
+aujourd'hui ? 
+Bu kitap mı ? 
+Ce livre-là ? 
+Bu renk mavi mi ? 
+Cette couleur, c'est du bleu ? 
+Kim ? Orhan mı, metin mi ? 
+Who ? Orhan ou Metin ?
+Bu hemşire, öncü mü ? 
+İs this sister pionnerring ?
+Bu Cemaat, fethiye mi ?
+Tarla buluşma, yarın mi, 
+Cumartesi mi ? 
+La réunion pour la prédication, 
+c'est demain ou samedi ? 
+Ibadet salonu nerede ? 
+Où est la Salle du Royaume
+Ibadet Salonu şu bina mı ? 
+La salle du Royaume, c'est ce bâtiment ? 
+Burası hala Fethiye mi ?
+Hayır, burası Ovacık 
+Ici, c'est encore Fethiye.
+Non ici, c'est Ovacık ? 
+Burada Hava sıcak
+İci, le temps est chaud
+Orada, hava soğuk mu?
+Là-bas le temps est-il froid ? 
+Orada plaj çok güzel
+Şu birader türk mÜ ?
+Hayır, şu birader alman
+Su bahçe çoc güzel.
+Ce jardin est très beau
+O kim ? 
+Lui (elle) c'est qui ? 
+Bu hemşire kim ?
+Cette soeur, c'est qui ? 
+C'est ma femme
+O eşim
+

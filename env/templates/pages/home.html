@@ -1,0 +1,96 @@
+{% extends 'layouts/monapp.html' %}  
+
+  {% block content %}
+    
+        coucou<br />
+
+                <p>
+                    Bienvenue sur JWTurkçe.
+
+                    <button onclick="window.location.href= '//www.jw.org/';">JW.ORG</button>
+
+                     
+
+                </p>
+                <hr />
+                <h1>Titre de niveau 1</h1>
+                <h2>Titre de niveau 2</h2>
+                <h3>Titre de niveau 3</h3>
+                <h4>Titre de niveau 4</h4>
+                <h5>Titre de niveau 5</h5>
+                <h6>Titre de niveau 6</h6>
+                <hr />
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+
+                </ul>
+                <hr />
+                <ol>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+
+                </ol>
+                <hr />
+                <ul>
+                    <li>item 1</li>
+                    <ul>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                    <li>item 4</li>
+                </ul>
+                <p>
+                    <h1>Une liste :</h1>
+                    <ul>
+                        <li>item 1</li>
+                    <ul>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                    <li>item 4</li>
+                    </ul>
+                </p>
+                <hr />
+                <!--ci dessous est une section qui explique la différence entre
+                les balises blocs et les balises ligne-->
+                <div>Une premiere balise div</div>
+                <div>Une deuxième balise div</div>
+                <div>Une troisième balise div</div>
+                <span>Une premiere balise span</span>
+                <span>Une deuxième balise span</span>
+                <span>Une troisième balise span</span>
+                <hr />
+                <img src="{{ url_for('static', filename ='images/nous.jpg')}}" width = "400px" alt='logo de nous' /><img src="nous.jpg" width = "400px" />
+               
+                <p id="demonstration"> nous y sommes...</p>
+
+                <script src="{{ url_for('static', filename='js/myfile.js')}}"></script>
+                
+                <hr />
+                <b>un texte en gras</b>
+                <i>UN texte en italique</i>
+                <strong>Un texte en exergue selon le souhait du navigateur</strong>
+                <em>Un texte en exergue selon le souhait du navigateur</em>
+                <u>UN texte souligné</u>
+                <hr />
+                <table style ="border:4px solid black">
+                    <tr>
+                        <td style ="border:2px solid black">première cellule</td>
+                        <td style ="border:2px solid red">deuxième cellule</td>
+                    </tr>
+                    <tr>
+                        <td style ="border:2px solid black">première cellule</td>
+                        <td style ="border:2px solid red">deuxième cellule</td>
+                    </tr>
+                </table>
+
+
+  {% endblock content %}
+
+
+
+
+
